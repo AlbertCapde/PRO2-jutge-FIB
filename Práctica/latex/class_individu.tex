@@ -1,0 +1,277 @@
+\hypertarget{class_individu}{}\section{Referència de la Classe Individu}
+\label{class_individu}\index{Individu@{Individu}}
+
+
+Representa les característiques d\textquotesingle{}un individu.  
+
+
+\subsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_individu_ac35091404cfbf11946694806aefa9e7e}{Individu} ()
+\begin{DoxyCompactList}\small\item\em Creador per defecte. \end{DoxyCompactList}\item 
+void \hyperlink{class_individu_a09f3188549ab207ae329ddf56ae6240f}{afegir} (string tret)
+\begin{DoxyCompactList}\small\item\em Modificadora dels trets que presenta l\textquotesingle{}individu. \end{DoxyCompactList}\item 
+void \hyperlink{class_individu_a8fbb728841cf4aefd304e10f4a6336a0}{treure} (string tret)
+\begin{DoxyCompactList}\small\item\em Modificadora dels trets que presenta l\textquotesingle{}individu. \end{DoxyCompactList}\item 
+\hyperlink{class_cromosomes}{Cromosomes} \hyperlink{class_individu_a39942c24ef726105afe2b193494985a0}{consultar\+\_\+crom} () const 
+\begin{DoxyCompactList}\small\item\em Consulta els cromosomes de l\textquotesingle{}individu. \end{DoxyCompactList}\item 
+bool \hyperlink{class_individu_a06cdcd2074fcf08fe55fe1e5014cd51b}{te\+\_\+tret} (string tret)
+\begin{DoxyCompactList}\small\item\em Consulta si l\textquotesingle{}individu presenta el tret. \end{DoxyCompactList}\item 
+void \hyperlink{class_individu_a03cd34a1eb0eaf4e0a1280ca8cc38a5f}{llegir\+\_\+individu} (int m)
+\begin{DoxyCompactList}\small\item\em Operació de lectura. \end{DoxyCompactList}\item 
+void \hyperlink{class_individu_af58b5637967c9ae9e27e62d5671d80a1}{escriure\+\_\+individu} () const 
+\begin{DoxyCompactList}\small\item\em Operació de escriptura. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributs Privats}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_cromosomes}{Cromosomes} \hyperlink{class_individu_a84ba8716c5c488ea4be7b7218bde1b93}{crom}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_cromosomes}{Cromosomes} de l\textquotesingle{}individu. \end{DoxyCompactList}\item 
+set$<$ string $>$ \hyperlink{class_individu_a0ac8e4f21a7d491e6c8b90f267065bca}{trets}
+\begin{DoxyCompactList}\small\item\em Conjunt dels trets que presenta. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripció Detallada}
+Representa les característiques d\textquotesingle{}un individu. 
+
+Conté informació sobre l\textquotesingle{}individu, el parell de gens i els trets que presenta. 
+
+Definició a la línia 24 del fitxer Individu.\+hh.
+
+
+
+\subsection{Documentació del Constructor i el Destructor}
+\index{Individu@{Individu}!Individu@{Individu}}
+\index{Individu@{Individu}!Individu@{Individu}}
+\subsubsection[{\texorpdfstring{Individu()}{Individu()}}]{\setlength{\rightskip}{0pt plus 5cm}Individu\+::\+Individu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_individu_ac35091404cfbf11946694806aefa9e7e}{}\label{class_individu_ac35091404cfbf11946694806aefa9e7e}
+
+
+Creador per defecte. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El resultat es un individu buit 
+\end{DoxyPostcond}
+
+
+Definició a la línia 7 del fitxer Individu.\+cc.
+
+
+\begin{DoxyCode}
+7 \{\}
+\end{DoxyCode}
+
+
+\subsection{Documentació de les Funcions Membre}
+\index{Individu@{Individu}!afegir@{afegir}}
+\index{afegir@{afegir}!Individu@{Individu}}
+\subsubsection[{\texorpdfstring{afegir(string tret)}{afegir(string tret)}}]{\setlength{\rightskip}{0pt plus 5cm}void Individu\+::afegir (
+\begin{DoxyParamCaption}
+\item[{string}]{tret}
+\end{DoxyParamCaption}
+)}\hypertarget{class_individu_a09f3188549ab207ae329ddf56ae6240f}{}\label{class_individu_a09f3188549ab207ae329ddf56ae6240f}
+
+
+Modificadora dels trets que presenta l\textquotesingle{}individu. 
+
+\begin{DoxyPrecond}{Precondició}
+L\textquotesingle{}individu no presenta el tret 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}afegeix el tret a l\textquotesingle{}individu 
+\end{DoxyPostcond}
+
+
+Definició a la línia 26 del fitxer Individu.\+cc.
+
+
+\begin{DoxyCode}
+27 \{
+28   \hyperlink{class_individu_a0ac8e4f21a7d491e6c8b90f267065bca}{trets}.insert(tret);
+29 \}
+\end{DoxyCode}
+\index{Individu@{Individu}!treure@{treure}}
+\index{treure@{treure}!Individu@{Individu}}
+\subsubsection[{\texorpdfstring{treure(string tret)}{treure(string tret)}}]{\setlength{\rightskip}{0pt plus 5cm}void Individu\+::treure (
+\begin{DoxyParamCaption}
+\item[{string}]{tret}
+\end{DoxyParamCaption}
+)}\hypertarget{class_individu_a8fbb728841cf4aefd304e10f4a6336a0}{}\label{class_individu_a8fbb728841cf4aefd304e10f4a6336a0}
+
+
+Modificadora dels trets que presenta l\textquotesingle{}individu. 
+
+\begin{DoxyPrecond}{Precondició}
+L\textquotesingle{}individu presenta el tret 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Es treu el tret de l\textquotesingle{}individu 
+\end{DoxyPostcond}
+
+
+Definició a la línia 31 del fitxer Individu.\+cc.
+
+
+\begin{DoxyCode}
+32 \{
+33   \hyperlink{class_individu_a0ac8e4f21a7d491e6c8b90f267065bca}{trets}.erase(tret);
+34 \}
+\end{DoxyCode}
+\index{Individu@{Individu}!consultar\+\_\+crom@{consultar\+\_\+crom}}
+\index{consultar\+\_\+crom@{consultar\+\_\+crom}!Individu@{Individu}}
+\subsubsection[{\texorpdfstring{consultar\+\_\+crom() const }{consultar_crom() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cromosomes} Individu\+::consultar\+\_\+crom (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_individu_a39942c24ef726105afe2b193494985a0}{}\label{class_individu_a39942c24ef726105afe2b193494985a0}
+
+
+Consulta els cromosomes de l\textquotesingle{}individu. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Indica els cromosomes 
+\end{DoxyPostcond}
+
+
+Definició a la línia 9 del fitxer Individu.\+cc.
+
+
+\begin{DoxyCode}
+10 \{
+11   \textcolor{keywordflow}{return} \hyperlink{class_individu_a84ba8716c5c488ea4be7b7218bde1b93}{crom};
+12 \}
+\end{DoxyCode}
+\index{Individu@{Individu}!te\+\_\+tret@{te\+\_\+tret}}
+\index{te\+\_\+tret@{te\+\_\+tret}!Individu@{Individu}}
+\subsubsection[{\texorpdfstring{te\+\_\+tret(string tret)}{te_tret(string tret)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Individu\+::te\+\_\+tret (
+\begin{DoxyParamCaption}
+\item[{string}]{tret}
+\end{DoxyParamCaption}
+)}\hypertarget{class_individu_a06cdcd2074fcf08fe55fe1e5014cd51b}{}\label{class_individu_a06cdcd2074fcf08fe55fe1e5014cd51b}
+
+
+Consulta si l\textquotesingle{}individu presenta el tret. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Indica si presenta el tret 
+\end{DoxyPostcond}
+
+
+Definició a la línia 14 del fitxer Individu.\+cc.
+
+
+\begin{DoxyCode}
+15 \{
+16 \textcolor{comment}{// No es constant, ja que, al ser un conjunt si es consulta i no existeix es crea}
+17   \textcolor{keywordtype}{bool} te = \textcolor{keyword}{true};
+18   set<string>::const\_iterator it = \hyperlink{class_individu_a0ac8e4f21a7d491e6c8b90f267065bca}{trets}.find(tret);
+19   \textcolor{keywordflow}{if}(it == \hyperlink{class_individu_a0ac8e4f21a7d491e6c8b90f267065bca}{trets}.end()) \{
+20     te = \textcolor{keyword}{false};
+21     \hyperlink{class_individu_a0ac8e4f21a7d491e6c8b90f267065bca}{trets}.erase(tret);
+22   \}
+23   \textcolor{keywordflow}{return} te;
+24 \}
+\end{DoxyCode}
+\index{Individu@{Individu}!llegir\+\_\+individu@{llegir\+\_\+individu}}
+\index{llegir\+\_\+individu@{llegir\+\_\+individu}!Individu@{Individu}}
+\subsubsection[{\texorpdfstring{llegir\+\_\+individu(int m)}{llegir_individu(int m)}}]{\setlength{\rightskip}{0pt plus 5cm}void Individu\+::llegir\+\_\+individu (
+\begin{DoxyParamCaption}
+\item[{int}]{m}
+\end{DoxyParamCaption}
+)}\hypertarget{class_individu_a03cd34a1eb0eaf4e0a1280ca8cc38a5f}{}\label{class_individu_a03cd34a1eb0eaf4e0a1280ca8cc38a5f}
+
+
+Operació de lectura. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El parametre implicit conté els cromosomes d\textquotesingle{}aquest 
+\end{DoxyPostcond}
+
+
+Definició a la línia 36 del fitxer Individu.\+cc.
+
+
+\begin{DoxyCode}
+37 \{
+38   \hyperlink{class_individu_a84ba8716c5c488ea4be7b7218bde1b93}{crom}.\hyperlink{class_cromosomes_ae475f91a7ebbe2b6253f2cf87e05d05c}{llegir\_cromosomes}(m);
+39 \}
+\end{DoxyCode}
+\index{Individu@{Individu}!escriure\+\_\+individu@{escriure\+\_\+individu}}
+\index{escriure\+\_\+individu@{escriure\+\_\+individu}!Individu@{Individu}}
+\subsubsection[{\texorpdfstring{escriure\+\_\+individu() const }{escriure_individu() const }}]{\setlength{\rightskip}{0pt plus 5cm}void Individu\+::escriure\+\_\+individu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_individu_af58b5637967c9ae9e27e62d5671d80a1}{}\label{class_individu_af58b5637967c9ae9e27e62d5671d80a1}
+
+
+Operació de escriptura. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}escriu pel el canal de sortida estàndard els cromosomes i els trets que presenta 
+\end{DoxyPostcond}
+
+
+Definició a la línia 41 del fitxer Individu.\+cc.
+
+
+\begin{DoxyCode}
+42 \{
+43   \hyperlink{class_individu_a84ba8716c5c488ea4be7b7218bde1b93}{crom}.\hyperlink{class_cromosomes_a82634290c5bd73c827034902404c90cf}{escriure\_cromosomes}();
+44   set<string>::iterator it = \hyperlink{class_individu_a0ac8e4f21a7d491e6c8b90f267065bca}{trets}.begin();
+45   \textcolor{keywordflow}{while} (it != \hyperlink{class_individu_a0ac8e4f21a7d491e6c8b90f267065bca}{trets}.end()) \{
+46     cout << \textcolor{stringliteral}{"  "};
+47     cout << *it << endl;
+48     ++it;
+49   \}
+50 \}
+\end{DoxyCode}
+
+
+\subsection{Documentació de les Dades Membre}
+\index{Individu@{Individu}!crom@{crom}}
+\index{crom@{crom}!Individu@{Individu}}
+\subsubsection[{\texorpdfstring{crom}{crom}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cromosomes} Individu\+::crom\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_individu_a84ba8716c5c488ea4be7b7218bde1b93}{}\label{class_individu_a84ba8716c5c488ea4be7b7218bde1b93}
+
+
+\hyperlink{class_cromosomes}{Cromosomes} de l\textquotesingle{}individu. 
+
+
+
+Definició a la línia 29 del fitxer Individu.\+hh.
+
+\index{Individu@{Individu}!trets@{trets}}
+\index{trets@{trets}!Individu@{Individu}}
+\subsubsection[{\texorpdfstring{trets}{trets}}]{\setlength{\rightskip}{0pt plus 5cm}set$<$string$>$ Individu\+::trets\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_individu_a0ac8e4f21a7d491e6c8b90f267065bca}{}\label{class_individu_a0ac8e4f21a7d491e6c8b90f267065bca}
+
+
+Conjunt dels trets que presenta. 
+
+
+
+Definició a la línia 32 del fitxer Individu.\+hh.
+
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir dels següents fitxers\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_individu_8hh}{Individu.\+hh}\item 
+\hyperlink{_individu_8cc}{Individu.\+cc}\end{DoxyCompactItemize}

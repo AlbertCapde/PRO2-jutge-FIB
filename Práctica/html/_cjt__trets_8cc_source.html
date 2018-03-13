@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Pràctica PRO2. Aplicació per a un laboratori de biologia.: Fitxer de Codi Cjt_trets.cc</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Pràctica PRO2. Aplicació per a un laboratori de biologia.
+   &#160;<span id="projectnumber">16-12-2017</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generat per Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Pàgina&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fitxers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Cerca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Llista&#160;dels&#160;Fitxers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;Fitxers</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Cjt_trets.cc</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_cjt__trets_8cc.html">Veure la documentació d'aquest fitxer.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_cjt__trets_8hh.html">Cjt_trets.hh</a>&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_cjt__trets.html#a0f3d29b433ebfa6d9680e1ee0f39279b">    7</a></span>&#160;<a class="code" href="class_cjt__trets.html#a0f3d29b433ebfa6d9680e1ee0f39279b">Cjt_trets::Cjt_trets</a>() {}</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_cjt__trets.html#a6da10e61a25071a25eca708f61a1e33d">    9</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_cjt__trets.html#a6da10e61a25071a25eca708f61a1e33d">Cjt_trets::existeix_tret</a>(<span class="keywordtype">string</span> tret) </div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// No es constant, ja que, al ser un diccionari si es consulta i no existeix es crea</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keywordtype">bool</span> existeix = <span class="keyword">true</span>;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  map&lt;string, Tret&gt;::const_iterator it = <a class="code" href="class_cjt__trets.html#ab13190e3207e0e51bd78cf16b8ed5360">trets</a>.find(tret);</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keywordflow">if</span>(it == <a class="code" href="class_cjt__trets.html#ab13190e3207e0e51bd78cf16b8ed5360">trets</a>.end()) {<span class="comment">// Si no hi es s&#39;elimina el tret creat al consultar</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    existeix = <span class="keyword">false</span>;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="class_cjt__trets.html#ab13190e3207e0e51bd78cf16b8ed5360">trets</a>.erase(tret);</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  }</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keywordflow">return</span> existeix;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_cjt__trets.html#ad315f780dfe22f6730ee9ce9aa2b25d7">   21</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_cjt__trets.html#ad315f780dfe22f6730ee9ce9aa2b25d7">Cjt_trets::afegir</a>(<span class="keywordtype">string</span> tret, <span class="keywordtype">int</span> <span class="keywordtype">id</span>, <a class="code" href="class_cjt__individus.html">Cjt_individus</a>&amp; x) </div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  x.<a class="code" href="class_cjt__individus.html#a66d3e1b39b40532a2e2cff60fbf0b72a">afegir_tret</a>(<span class="keywordtype">id</span>, tret);<span class="comment">// S&#39;afegeix el tret a l&#39;individu</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <a class="code" href="class_cjt__trets.html#ab13190e3207e0e51bd78cf16b8ed5360">trets</a>[tret].afegir_individu(<span class="keywordtype">id</span>, x);<span class="comment">// Si no existeix en el conjunt es crea</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_cjt__trets.html#ae4152db728b8c78d6e56856e0e88de33">   27</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_cjt__trets.html#ae4152db728b8c78d6e56856e0e88de33">Cjt_trets::treure</a>(<span class="keywordtype">string</span> tret, <span class="keywordtype">int</span> <span class="keywordtype">id</span>, <a class="code" href="class_cjt__individus.html">Cjt_individus</a>&amp; x) </div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  x.<a class="code" href="class_cjt__individus.html#ab2f75f67eeaa424ffe8773e47d3223e8">treure_tret</a>(<span class="keywordtype">id</span>, tret);<span class="comment">// Es true el tret de l&#39;individu</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <a class="code" href="class_cjt__trets.html#ab13190e3207e0e51bd78cf16b8ed5360">trets</a>[tret].treure_individu(<span class="keywordtype">id</span>, x);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="class_cjt__trets.html#ab13190e3207e0e51bd78cf16b8ed5360">trets</a>[tret].buit()) <a class="code" href="class_cjt__trets.html#ab13190e3207e0e51bd78cf16b8ed5360">trets</a>.erase(tret);<span class="comment">// Si el tret queda buit s&#39;elimina</span></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_cjt__trets.html#ad53ad0f5574d551fdbc8f665323a1db7">   34</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_cjt__trets.html#ad53ad0f5574d551fdbc8f665323a1db7">Cjt_trets::escriure_tret</a>(<span class="keywordtype">string</span> tret) </div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  cout &lt;&lt; <span class="stringliteral">&quot;  &quot;</span> &lt;&lt; tret &lt;&lt; endl;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="class_cjt__trets.html#ab13190e3207e0e51bd78cf16b8ed5360">trets</a>[tret].escriure();</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div><div class="ttc" id="_cjt__trets_8hh_html"><div class="ttname"><a href="_cjt__trets_8hh.html">Cjt_trets.hh</a></div><div class="ttdoc">Especificació de la classe Cjt_trets. </div></div>
+<div class="ttc" id="class_cjt__trets_html_ad53ad0f5574d551fdbc8f665323a1db7"><div class="ttname"><a href="class_cjt__trets.html#ad53ad0f5574d551fdbc8f665323a1db7">Cjt_trets::escriure_tret</a></div><div class="ttdeci">void escriure_tret(string tret)</div><div class="ttdoc">Operació d&amp;#39;escriptura del tret. </div><div class="ttdef"><b>Definition:</b> <a href="_cjt__trets_8cc_source.html#l00034">Cjt_trets.cc:34</a></div></div>
+<div class="ttc" id="class_cjt__individus_html_ab2f75f67eeaa424ffe8773e47d3223e8"><div class="ttname"><a href="class_cjt__individus.html#ab2f75f67eeaa424ffe8773e47d3223e8">Cjt_individus::treure_tret</a></div><div class="ttdeci">void treure_tret(int id, string tret)</div><div class="ttdoc">Modificadora dels individus que presenten el tret. </div><div class="ttdef"><b>Definition:</b> <a href="_cjt__individus_8cc_source.html#l00024">Cjt_individus.cc:24</a></div></div>
+<div class="ttc" id="class_cjt__individus_html_a66d3e1b39b40532a2e2cff60fbf0b72a"><div class="ttname"><a href="class_cjt__individus.html#a66d3e1b39b40532a2e2cff60fbf0b72a">Cjt_individus::afegir_tret</a></div><div class="ttdeci">void afegir_tret(int id, string tret)</div><div class="ttdoc">Modificadora dels individus que presenten el tret. </div><div class="ttdef"><b>Definition:</b> <a href="_cjt__individus_8cc_source.html#l00019">Cjt_individus.cc:19</a></div></div>
+<div class="ttc" id="class_cjt__trets_html_ad315f780dfe22f6730ee9ce9aa2b25d7"><div class="ttname"><a href="class_cjt__trets.html#ad315f780dfe22f6730ee9ce9aa2b25d7">Cjt_trets::afegir</a></div><div class="ttdeci">void afegir(string tret, int id, Cjt_individus &amp;x)</div><div class="ttdoc">Modificadora del conjunt de trets. </div><div class="ttdef"><b>Definition:</b> <a href="_cjt__trets_8cc_source.html#l00021">Cjt_trets.cc:21</a></div></div>
+<div class="ttc" id="class_cjt__trets_html_a0f3d29b433ebfa6d9680e1ee0f39279b"><div class="ttname"><a href="class_cjt__trets.html#a0f3d29b433ebfa6d9680e1ee0f39279b">Cjt_trets::Cjt_trets</a></div><div class="ttdeci">Cjt_trets()</div><div class="ttdoc">Creadora per defecte. </div><div class="ttdef"><b>Definition:</b> <a href="_cjt__trets_8cc_source.html#l00007">Cjt_trets.cc:7</a></div></div>
+<div class="ttc" id="class_cjt__trets_html_ab13190e3207e0e51bd78cf16b8ed5360"><div class="ttname"><a href="class_cjt__trets.html#ab13190e3207e0e51bd78cf16b8ed5360">Cjt_trets::trets</a></div><div class="ttdeci">map&lt; string, Tret &gt; trets</div><div class="ttdoc">Diccionari dels trets. </div><div class="ttdef"><b>Definition:</b> <a href="_cjt__trets_8hh_source.html#l00031">Cjt_trets.hh:31</a></div></div>
+<div class="ttc" id="class_cjt__trets_html_a6da10e61a25071a25eca708f61a1e33d"><div class="ttname"><a href="class_cjt__trets.html#a6da10e61a25071a25eca708f61a1e33d">Cjt_trets::existeix_tret</a></div><div class="ttdeci">bool existeix_tret(string tret)</div><div class="ttdoc">Consulta si existeix el tret. </div><div class="ttdef"><b>Definition:</b> <a href="_cjt__trets_8cc_source.html#l00009">Cjt_trets.cc:9</a></div></div>
+<div class="ttc" id="class_cjt__trets_html_ae4152db728b8c78d6e56856e0e88de33"><div class="ttname"><a href="class_cjt__trets.html#ae4152db728b8c78d6e56856e0e88de33">Cjt_trets::treure</a></div><div class="ttdeci">void treure(string tret, int id, Cjt_individus &amp;x)</div><div class="ttdoc">Modificadora del conjunt de trets. </div><div class="ttdef"><b>Definition:</b> <a href="_cjt__trets_8cc_source.html#l00027">Cjt_trets.cc:27</a></div></div>
+<div class="ttc" id="class_cjt__individus_html"><div class="ttname"><a href="class_cjt__individus.html">Cjt_individus</a></div><div class="ttdoc">Representa el conjunt d&amp;#39;individus d&amp;#39;un experiment. </div><div class="ttdef"><b>Definition:</b> <a href="_cjt__individus_8hh_source.html#l00024">Cjt_individus.hh:24</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generat per &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

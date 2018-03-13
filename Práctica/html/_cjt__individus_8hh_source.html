@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Pràctica PRO2. Aplicació per a un laboratori de biologia.: Fitxer de Codi Cjt_individus.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Pràctica PRO2. Aplicació per a un laboratori de biologia.
+   &#160;<span id="projectnumber">16-12-2017</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generat per Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Pàgina&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fitxers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Cerca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Llista&#160;dels&#160;Fitxers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;Fitxers</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Cjt_individus.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_cjt__individus_8hh.html">Veure la documentació d'aquest fitxer.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef _CJT_INDIVIDUS_</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define _CJT_INDIVIDUS_</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_individu_8hh.html">Individu.hh</a>&quot;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef NO_DIAGRAM</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_bin_tree_8hh.html">BinTree.hh</a>&quot;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * Classe Cjt_individus</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> */</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_cjt__individus.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_cjt__individus.html">Cjt_individus</a> {</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_cjt__individus.html#aa4786868783b8da4233a9b844ad376ce">   29</a></span>&#160;  <a class="code" href="class_bin_tree.html">BinTree&lt;int&gt;</a> <a class="code" href="class_cjt__individus.html#aa4786868783b8da4233a9b844ad376ce">arbregen</a>;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_cjt__individus.html#aa28716121e4fbc5b6a90150748c9fc0b">   34</a></span>&#160;  vector&lt;Individu&gt; <a class="code" href="class_cjt__individus.html#aa28716121e4fbc5b6a90150748c9fc0b">individus</a>;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  </div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="comment">// Constructora</span></div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="class_cjt__individus.html#ace12a900a02d3b12c8067c7867618c50">Cjt_individus</a>();</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  </div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="comment">// Modificadores</span></div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  </div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_cjt__individus.html#a66d3e1b39b40532a2e2cff60fbf0b72a">afegir_tret</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>, <span class="keywordtype">string</span> tret);</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  </div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_cjt__individus.html#ab2f75f67eeaa424ffe8773e47d3223e8">treure_tret</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>, <span class="keywordtype">string</span> tret);</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  </div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="comment">// Consultores</span></div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  </div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="class_cromosomes.html">Cromosomes</a> <a class="code" href="class_cjt__individus.html#a5c98261f78513b1b008cead471d8afa5">consultar_crom_individu</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>) <span class="keyword">const</span>;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  </div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="class_cjt__individus.html#ab7ef8ea63550958f2025a684dc804308">individu_te_tret</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>, <span class="keywordtype">string</span> tret);</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  </div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="comment">// Lectura i escriptura</span></div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_cjt__individus.html#a478b829d6a11c5259a36a8bd53662e7d">llegir</a>(<span class="keywordtype">int</span> n, <span class="keywordtype">int</span> m);</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  </div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_cjt__individus.html#aafb2e0f4456390cbe83009aa542b0991">escriure</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>) <span class="keyword">const</span>;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  </div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_cjt__individus.html#afbd2a5f911caa9d9ca05470781c395a2">escriure_distribucio_tret</a>(<span class="keywordtype">string</span> tret);</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  </div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_cjt__individus.html#af4d73e9f298f7fab8411f2485a7c8fc5">llegir_arbre_genealogic</a>(<a class="code" href="class_bin_tree.html">BinTree&lt;int&gt;</a>&amp; abregen);</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  </div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_cjt__individus.html#ac72868ef20cbed360206829ff580c38c">escriure_distribucio</a>(<span class="keyword">const</span> <a class="code" href="class_bin_tree.html">BinTree&lt;int&gt;</a>&amp; dist);</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_cjt__individus.html#a569a1232f6660f888176cacd07df134a">distribucio</a>(<span class="keyword">const</span> <a class="code" href="class_bin_tree.html">BinTree&lt;int&gt;</a>&amp; a, <a class="code" href="class_bin_tree.html">BinTree&lt;int&gt;</a>&amp; dist, <span class="keywordtype">string</span> tret);</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;};</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="_bin_tree_8hh_html"><div class="ttname"><a href="_bin_tree_8hh.html">BinTree.hh</a></div></div>
+<div class="ttc" id="class_bin_tree_html"><div class="ttname"><a href="class_bin_tree.html">BinTree&lt; int &gt;</a></div></div>
+<div class="ttc" id="class_cjt__individus_html_ac72868ef20cbed360206829ff580c38c"><div class="ttname"><a href="class_cjt__individus.html#ac72868ef20cbed360206829ff580c38c">Cjt_individus::escriure_distribucio</a></div><div class="ttdeci">static void escriure_distribucio(const BinTree&lt; int &gt; &amp;dist)</div><div class="ttdoc">Operació d&amp;#39;escriptura de la distribució del tret. </div><div class="ttdef"><b>Definition:</b> <a href="_cjt__individus_8cc_source.html#l00081">Cjt_individus.cc:81</a></div></div>
+<div class="ttc" id="class_cjt__individus_html_ab7ef8ea63550958f2025a684dc804308"><div class="ttname"><a href="class_cjt__individus.html#ab7ef8ea63550958f2025a684dc804308">Cjt_individus::individu_te_tret</a></div><div class="ttdeci">bool individu_te_tret(int id, string tret)</div><div class="ttdoc">Consulta si l&amp;#39;individu té el tret. </div><div class="ttdef"><b>Definition:</b> <a href="_cjt__individus_8cc_source.html#l00014">Cjt_individus.cc:14</a></div></div>
+<div class="ttc" id="class_cjt__individus_html_aa28716121e4fbc5b6a90150748c9fc0b"><div class="ttname"><a href="class_cjt__individus.html#aa28716121e4fbc5b6a90150748c9fc0b">Cjt_individus::individus</a></div><div class="ttdeci">vector&lt; Individu &gt; individus</div><div class="ttdoc">Vector d&amp;#39;individus. </div><div class="ttdef"><b>Definition:</b> <a href="_cjt__individus_8hh_source.html#l00034">Cjt_individus.hh:34</a></div></div>
+<div class="ttc" id="class_cjt__individus_html_ab2f75f67eeaa424ffe8773e47d3223e8"><div class="ttname"><a href="class_cjt__individus.html#ab2f75f67eeaa424ffe8773e47d3223e8">Cjt_individus::treure_tret</a></div><div class="ttdeci">void treure_tret(int id, string tret)</div><div class="ttdoc">Modificadora dels individus que presenten el tret. </div><div class="ttdef"><b>Definition:</b> <a href="_cjt__individus_8cc_source.html#l00024">Cjt_individus.cc:24</a></div></div>
+<div class="ttc" id="class_cjt__individus_html_aa4786868783b8da4233a9b844ad376ce"><div class="ttname"><a href="class_cjt__individus.html#aa4786868783b8da4233a9b844ad376ce">Cjt_individus::arbregen</a></div><div class="ttdeci">BinTree&lt; int &gt; arbregen</div><div class="ttdoc">Arbre genealogic, on cada node té l&amp;#39;identificador d&amp;#39;un individu. </div><div class="ttdef"><b>Definition:</b> <a href="_cjt__individus_8hh_source.html#l00029">Cjt_individus.hh:29</a></div></div>
+<div class="ttc" id="class_cjt__individus_html_a66d3e1b39b40532a2e2cff60fbf0b72a"><div class="ttname"><a href="class_cjt__individus.html#a66d3e1b39b40532a2e2cff60fbf0b72a">Cjt_individus::afegir_tret</a></div><div class="ttdeci">void afegir_tret(int id, string tret)</div><div class="ttdoc">Modificadora dels individus que presenten el tret. </div><div class="ttdef"><b>Definition:</b> <a href="_cjt__individus_8cc_source.html#l00019">Cjt_individus.cc:19</a></div></div>
+<div class="ttc" id="class_cjt__individus_html_aafb2e0f4456390cbe83009aa542b0991"><div class="ttname"><a href="class_cjt__individus.html#aafb2e0f4456390cbe83009aa542b0991">Cjt_individus::escriure</a></div><div class="ttdeci">void escriure(int id) const </div><div class="ttdoc">Operació d&amp;#39;escriptura de l&amp;#39;individu. </div><div class="ttdef"><b>Definition:</b> <a href="_cjt__individus_8cc_source.html#l00054">Cjt_individus.cc:54</a></div></div>
+<div class="ttc" id="class_cjt__individus_html_ace12a900a02d3b12c8067c7867618c50"><div class="ttname"><a href="class_cjt__individus.html#ace12a900a02d3b12c8067c7867618c50">Cjt_individus::Cjt_individus</a></div><div class="ttdeci">Cjt_individus()</div><div class="ttdoc">Creadora per defecte. </div><div class="ttdef"><b>Definition:</b> <a href="_cjt__individus_8cc_source.html#l00007">Cjt_individus.cc:7</a></div></div>
+<div class="ttc" id="class_cjt__individus_html_afbd2a5f911caa9d9ca05470781c395a2"><div class="ttname"><a href="class_cjt__individus.html#afbd2a5f911caa9d9ca05470781c395a2">Cjt_individus::escriure_distribucio_tret</a></div><div class="ttdeci">void escriure_distribucio_tret(string tret)</div><div class="ttdoc">Operació d&amp;#39;escriptura de la distribució del tret. </div><div class="ttdef"><b>Definition:</b> <a href="_cjt__individus_8cc_source.html#l00092">Cjt_individus.cc:92</a></div></div>
+<div class="ttc" id="class_cjt__individus_html_af4d73e9f298f7fab8411f2485a7c8fc5"><div class="ttname"><a href="class_cjt__individus.html#af4d73e9f298f7fab8411f2485a7c8fc5">Cjt_individus::llegir_arbre_genealogic</a></div><div class="ttdeci">static void llegir_arbre_genealogic(BinTree&lt; int &gt; &amp;abregen)</div><div class="ttdoc">Operació de lectura de l&amp;#39;arbre genealògic. </div><div class="ttdef"><b>Definition:</b> <a href="_cjt__individus_8cc_source.html#l00029">Cjt_individus.cc:29</a></div></div>
+<div class="ttc" id="class_cjt__individus_html_a569a1232f6660f888176cacd07df134a"><div class="ttname"><a href="class_cjt__individus.html#a569a1232f6660f888176cacd07df134a">Cjt_individus::distribucio</a></div><div class="ttdeci">void distribucio(const BinTree&lt; int &gt; &amp;a, BinTree&lt; int &gt; &amp;dist, string tret)</div><div class="ttdoc">Operació que obté la distribució d&amp;#39;un tret. </div><div class="ttdef"><b>Definition:</b> <a href="_cjt__individus_8cc_source.html#l00059">Cjt_individus.cc:59</a></div></div>
+<div class="ttc" id="class_cjt__individus_html_a5c98261f78513b1b008cead471d8afa5"><div class="ttname"><a href="class_cjt__individus.html#a5c98261f78513b1b008cead471d8afa5">Cjt_individus::consultar_crom_individu</a></div><div class="ttdeci">Cromosomes consultar_crom_individu(int id) const </div><div class="ttdoc">Consulta els cromosomes d&amp;#39;un individu. </div><div class="ttdef"><b>Definition:</b> <a href="_cjt__individus_8cc_source.html#l00009">Cjt_individus.cc:9</a></div></div>
+<div class="ttc" id="class_cjt__individus_html_a478b829d6a11c5259a36a8bd53662e7d"><div class="ttname"><a href="class_cjt__individus.html#a478b829d6a11c5259a36a8bd53662e7d">Cjt_individus::llegir</a></div><div class="ttdeci">void llegir(int n, int m)</div><div class="ttdoc">Operació de lectura. </div><div class="ttdef"><b>Definition:</b> <a href="_cjt__individus_8cc_source.html#l00043">Cjt_individus.cc:43</a></div></div>
+<div class="ttc" id="_individu_8hh_html"><div class="ttname"><a href="_individu_8hh.html">Individu.hh</a></div><div class="ttdoc">Especificació de la classe Individu. </div></div>
+<div class="ttc" id="class_cromosomes_html"><div class="ttname"><a href="class_cromosomes.html">Cromosomes</a></div><div class="ttdoc">Representa el parell de cromosomes. </div><div class="ttdef"><b>Definition:</b> <a href="_cromosomes_8hh_source.html#l00025">Cromosomes.hh:25</a></div></div>
+<div class="ttc" id="class_cjt__individus_html"><div class="ttname"><a href="class_cjt__individus.html">Cjt_individus</a></div><div class="ttdoc">Representa el conjunt d&amp;#39;individus d&amp;#39;un experiment. </div><div class="ttdef"><b>Definition:</b> <a href="_cjt__individus_8hh_source.html#l00024">Cjt_individus.hh:24</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generat per &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

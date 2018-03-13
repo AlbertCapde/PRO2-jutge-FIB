@@ -1,0 +1,192 @@
+\hypertarget{class_cromosomes}{}\section{Referència de la Classe Cromosomes}
+\label{class_cromosomes}\index{Cromosomes@{Cromosomes}}
+
+
+Representa el parell de cromosomes.  
+
+
+\subsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_cromosomes_a117e49dbba6fef6e75d5ba774e1bd24a}{Cromosomes} ()
+\begin{DoxyCompactList}\small\item\em Creador per defecte. \end{DoxyCompactList}\item 
+void \hyperlink{class_cromosomes_a3453b58fad109a8317018f8349852d55}{combinacio\+\_\+crom} (const \hyperlink{class_cromosomes}{Cromosomes} \&x)
+\begin{DoxyCompactList}\small\item\em Modificadora els cromosomes. \end{DoxyCompactList}\item 
+void \hyperlink{class_cromosomes_ae475f91a7ebbe2b6253f2cf87e05d05c}{llegir\+\_\+cromosomes} (int m)
+\begin{DoxyCompactList}\small\item\em Operació de lectura. \end{DoxyCompactList}\item 
+void \hyperlink{class_cromosomes_a82634290c5bd73c827034902404c90cf}{escriure\+\_\+cromosomes} () const 
+\begin{DoxyCompactList}\small\item\em Operació de escriptura. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributs Privats}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ char $>$ \hyperlink{class_cromosomes_a663df9407657383482e40832eca6e91a}{crom}
+\begin{DoxyCompactList}\small\item\em Vector del parell de cromosomes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripció Detallada}
+Representa el parell de cromosomes. 
+
+Conté els cromosomes i operacions per tratar-\/los. 
+
+Definició a la línia 25 del fitxer Cromosomes.\+hh.
+
+
+
+\subsection{Documentació del Constructor i el Destructor}
+\index{Cromosomes@{Cromosomes}!Cromosomes@{Cromosomes}}
+\index{Cromosomes@{Cromosomes}!Cromosomes@{Cromosomes}}
+\subsubsection[{\texorpdfstring{Cromosomes()}{Cromosomes()}}]{\setlength{\rightskip}{0pt plus 5cm}Cromosomes\+::\+Cromosomes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_cromosomes_a117e49dbba6fef6e75d5ba774e1bd24a}{}\label{class_cromosomes_a117e49dbba6fef6e75d5ba774e1bd24a}
+
+
+Creador per defecte. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El resultat es un vector de cromosomes buit 
+\end{DoxyPostcond}
+
+
+Definició a la línia 7 del fitxer Cromosomes.\+cc.
+
+
+\begin{DoxyCode}
+7 \{\}
+\end{DoxyCode}
+
+
+\subsection{Documentació de les Funcions Membre}
+\index{Cromosomes@{Cromosomes}!combinacio\+\_\+crom@{combinacio\+\_\+crom}}
+\index{combinacio\+\_\+crom@{combinacio\+\_\+crom}!Cromosomes@{Cromosomes}}
+\subsubsection[{\texorpdfstring{combinacio\+\_\+crom(const Cromosomes \&x)}{combinacio_crom(const Cromosomes &x)}}]{\setlength{\rightskip}{0pt plus 5cm}void Cromosomes\+::combinacio\+\_\+crom (
+\begin{DoxyParamCaption}
+\item[{const {\bf Cromosomes} \&}]{x}
+\end{DoxyParamCaption}
+)}\hypertarget{class_cromosomes_a3453b58fad109a8317018f8349852d55}{}\label{class_cromosomes_a3453b58fad109a8317018f8349852d55}
+
+
+Modificadora els cromosomes. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El parametre implicit conté la intersecció del seu vector i el passar per paràmetre 
+\end{DoxyPostcond}
+
+
+Definició a la línia 9 del fitxer Cromosomes.\+cc.
+
+
+\begin{DoxyCode}
+10 \{
+11   vector<char> comb;
+12   comb = x.\hyperlink{class_cromosomes_a663df9407657383482e40832eca6e91a}{crom};
+13   \textcolor{keywordtype}{int} tam = (\hyperlink{class_cromosomes_a663df9407657383482e40832eca6e91a}{crom}.size())/2;
+14   \textcolor{keywordtype}{int} i = 0;
+15   \textcolor{keywordflow}{while}(i<tam) \{
+16     \textcolor{keywordflow}{if}((\hyperlink{class_cromosomes_a663df9407657383482e40832eca6e91a}{crom}[i] != comb[i]) or (\hyperlink{class_cromosomes_a663df9407657383482e40832eca6e91a}{crom}[tam+i] != comb[tam+i])) \{
+17       \hyperlink{class_cromosomes_a663df9407657383482e40832eca6e91a}{crom}[i] = \textcolor{charliteral}{'-'};
+18       \hyperlink{class_cromosomes_a663df9407657383482e40832eca6e91a}{crom}[tam+i] = \textcolor{charliteral}{'-'};  
+19     \}
+20     ++i;
+21   \}
+22 \}
+\end{DoxyCode}
+\index{Cromosomes@{Cromosomes}!llegir\+\_\+cromosomes@{llegir\+\_\+cromosomes}}
+\index{llegir\+\_\+cromosomes@{llegir\+\_\+cromosomes}!Cromosomes@{Cromosomes}}
+\subsubsection[{\texorpdfstring{llegir\+\_\+cromosomes(int m)}{llegir_cromosomes(int m)}}]{\setlength{\rightskip}{0pt plus 5cm}void Cromosomes\+::llegir\+\_\+cromosomes (
+\begin{DoxyParamCaption}
+\item[{int}]{m}
+\end{DoxyParamCaption}
+)}\hypertarget{class_cromosomes_ae475f91a7ebbe2b6253f2cf87e05d05c}{}\label{class_cromosomes_ae475f91a7ebbe2b6253f2cf87e05d05c}
+
+
+Operació de lectura. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El parametre implícit conté el vector de cromosomes llegit del canal estandard d\textquotesingle{}entrada 
+\end{DoxyPostcond}
+
+
+Definició a la línia 24 del fitxer Cromosomes.\+cc.
+
+
+\begin{DoxyCode}
+25 \{
+26 \textcolor{comment}{// Esl parell de cromosomes es llegeix com a un únic vector, més fàcil de tractar,}
+27 \textcolor{comment}{// i com es té un parell el tamany del vector sempre serà parell.}
+28   \textcolor{keywordtype}{int} tam = 2*m;
+29   \hyperlink{class_cromosomes_a663df9407657383482e40832eca6e91a}{crom} = vector<char>(tam);
+30   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < tam; ++i) cin >> \hyperlink{class_cromosomes_a663df9407657383482e40832eca6e91a}{crom}[i];
+31 \}
+\end{DoxyCode}
+\index{Cromosomes@{Cromosomes}!escriure\+\_\+cromosomes@{escriure\+\_\+cromosomes}}
+\index{escriure\+\_\+cromosomes@{escriure\+\_\+cromosomes}!Cromosomes@{Cromosomes}}
+\subsubsection[{\texorpdfstring{escriure\+\_\+cromosomes() const }{escriure_cromosomes() const }}]{\setlength{\rightskip}{0pt plus 5cm}void Cromosomes\+::escriure\+\_\+cromosomes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_cromosomes_a82634290c5bd73c827034902404c90cf}{}\label{class_cromosomes_a82634290c5bd73c827034902404c90cf}
+
+
+Operació de escriptura. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}escriu pel el canal de sortida estàndard el vector de cromosomes 
+\end{DoxyPostcond}
+
+
+Definició a la línia 33 del fitxer Cromosomes.\+cc.
+
+
+\begin{DoxyCode}
+34 \{
+35 \textcolor{comment}{// S'esecriu el vector en dos meitats, és a dir, el parell de cromosomes}
+36   \textcolor{keywordtype}{int} tam = \hyperlink{class_cromosomes_a663df9407657383482e40832eca6e91a}{crom}.size();
+37   \textcolor{keywordtype}{int} i = 0;
+38   cout << \textcolor{stringliteral}{"  "};
+39   \textcolor{keywordflow}{while} (i < tam/2) \{
+40     cout << \hyperlink{class_cromosomes_a663df9407657383482e40832eca6e91a}{crom}[i];
+41     ++i;
+42   \}
+43   cout << endl;
+44   cout << \textcolor{stringliteral}{"  "};
+45   \textcolor{keywordflow}{while}(i < tam) \{
+46     cout << \hyperlink{class_cromosomes_a663df9407657383482e40832eca6e91a}{crom}[i];
+47     ++i;  
+48   \}
+49   cout << endl;
+50 \}
+\end{DoxyCode}
+
+
+\subsection{Documentació de les Dades Membre}
+\index{Cromosomes@{Cromosomes}!crom@{crom}}
+\index{crom@{crom}!Cromosomes@{Cromosomes}}
+\subsubsection[{\texorpdfstring{crom}{crom}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$char$>$ Cromosomes\+::crom\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_cromosomes_a663df9407657383482e40832eca6e91a}{}\label{class_cromosomes_a663df9407657383482e40832eca6e91a}
+
+
+Vector del parell de cromosomes. 
+
+
+
+Definició a la línia 30 del fitxer Cromosomes.\+hh.
+
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir dels següents fitxers\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_cromosomes_8hh}{Cromosomes.\+hh}\item 
+\hyperlink{_cromosomes_8cc}{Cromosomes.\+cc}\end{DoxyCompactItemize}

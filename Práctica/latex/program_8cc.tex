@@ -1,0 +1,89 @@
+\hypertarget{program_8cc}{}\section{Referència del Fitxer program.\+cc}
+\label{program_8cc}\index{program.\+cc@{program.\+cc}}
+
+
+Programa principal {\itshape Aplicació per a un laboratori de biologia}.  
+
+
+Inclou el graf de dependències per a program.\+cc\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{program_8cc__incl}
+\end{center}
+\end{figure}
+\subsection*{Funcions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{program_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripció Detallada}
+Programa principal {\itshape Aplicació per a un laboratori de biologia}. 
+
+
+
+\subsection{Documentació de les Funcions}
+\index{program.\+cc@{program.\+cc}!main@{main}}
+\index{main@{main}!program.\+cc@{program.\+cc}}
+\subsubsection[{\texorpdfstring{main()}{main()}}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{program_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}{}\label{program_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}
+
+
+Definició a la línia 20 del fitxer program.\+cc.
+
+
+\begin{DoxyCode}
+20            \{
+21   \hyperlink{class_cjt__individus}{Cjt\_individus} i;
+22   \hyperlink{class_cjt__trets}{Cjt\_trets} t;
+23   \textcolor{keywordtype}{string} op; \textcolor{comment}{// Nom de les operacions}
+24   cin >> op;
+25   \textcolor{keywordflow}{while}(op!=\textcolor{stringliteral}{"fi"}) \{
+26     \textcolor{keywordtype}{string} tret; \textcolor{comment}{// Nom del tret}
+27     \textcolor{keywordtype}{int} id, n, m; \textcolor{comment}{// Identificador, nombre d'invidus i nombre de gens}
+28     
+29     \textcolor{keywordflow}{if}(op==\textcolor{stringliteral}{"experiment"}) \{
+30       cin >> n >> m;
+31       i.\hyperlink{class_cjt__individus_a478b829d6a11c5259a36a8bd53662e7d}{llegir}(n, m);
+32       cout << op << \textcolor{charliteral}{' '} << n << \textcolor{charliteral}{' '} << m << endl;
+33     \}
+34     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(op==\textcolor{stringliteral}{"afegir"}) \{
+35       cin >> tret >> id;
+36       cout << op << \textcolor{charliteral}{' '} << tret << \textcolor{charliteral}{' '} << \textcolor{keywordtype}{id} << endl;
+37       \textcolor{keywordflow}{if}(i.\hyperlink{class_cjt__individus_ab7ef8ea63550958f2025a684dc804308}{individu\_te\_tret}(\textcolor{keywordtype}{id}, tret)) cout << \textcolor{stringliteral}{"  error"} << endl;
+38       \textcolor{keywordflow}{else} t.\hyperlink{class_cjt__trets_ad315f780dfe22f6730ee9ce9aa2b25d7}{afegir}(tret, \textcolor{keywordtype}{id}, i);
+39     \}
+40     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(op==\textcolor{stringliteral}{"treure"}) \{
+41       cin >> tret >> id;
+42       cout << op << \textcolor{charliteral}{' '} << tret << \textcolor{charliteral}{' '} << \textcolor{keywordtype}{id} << endl;
+43       \textcolor{keywordflow}{if}(!i.\hyperlink{class_cjt__individus_ab7ef8ea63550958f2025a684dc804308}{individu\_te\_tret}(\textcolor{keywordtype}{id}, tret)) cout << \textcolor{stringliteral}{"  error"} << endl;
+44       \textcolor{keywordflow}{else} t.\hyperlink{class_cjt__trets_ae4152db728b8c78d6e56856e0e88de33}{treure}(tret, \textcolor{keywordtype}{id}, i);
+45     \}
+46     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(op==\textcolor{stringliteral}{"consulta\_tret"}) \{
+47       cin >> tret;
+48       cout << op << \textcolor{charliteral}{' '} << tret << endl;
+49       \textcolor{keywordflow}{if}(!t.\hyperlink{class_cjt__trets_a6da10e61a25071a25eca708f61a1e33d}{existeix\_tret}(tret)) cout << \textcolor{stringliteral}{"  error"} << endl;
+50       \textcolor{keywordflow}{else} t.\hyperlink{class_cjt__trets_ad53ad0f5574d551fdbc8f665323a1db7}{escriure\_tret}(tret);
+51     \}
+52     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(op==\textcolor{stringliteral}{"consulta\_individu"}) \{
+53       cin >> id;
+54       cout << op << \textcolor{charliteral}{' '} << \textcolor{keywordtype}{id} << endl;
+55       i.\hyperlink{class_cjt__individus_aafb2e0f4456390cbe83009aa542b0991}{escriure}(\textcolor{keywordtype}{id});
+56     \}
+57     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(op==\textcolor{stringliteral}{"distribucio\_tret"}) \{
+58       cin >> tret;
+59       cout << op << \textcolor{charliteral}{' '} << tret << endl;
+60       \textcolor{keywordflow}{if}(!t.\hyperlink{class_cjt__trets_a6da10e61a25071a25eca708f61a1e33d}{existeix\_tret}(tret)) cout << \textcolor{stringliteral}{"  error"} << endl;
+61       \textcolor{keywordflow}{else} i.\hyperlink{class_cjt__individus_afbd2a5f911caa9d9ca05470781c395a2}{escriure\_distribucio\_tret}(tret);
+62     \}
+63     cin >> op;
+64   \}
+65   cout << \textcolor{stringliteral}{"fi"} << endl;
+66 \}
+\end{DoxyCode}

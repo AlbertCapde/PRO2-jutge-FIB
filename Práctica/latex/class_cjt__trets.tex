@@ -1,0 +1,208 @@
+\hypertarget{class_cjt__trets}{}\section{Referència de la Classe Cjt\+\_\+trets}
+\label{class_cjt__trets}\index{Cjt\+\_\+trets@{Cjt\+\_\+trets}}
+
+
+Representa el conjunt de trets d\textquotesingle{}un experiment.  
+
+
+\subsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_cjt__trets_a0f3d29b433ebfa6d9680e1ee0f39279b}{Cjt\+\_\+trets} ()
+\begin{DoxyCompactList}\small\item\em Creadora per defecte. \end{DoxyCompactList}\item 
+void \hyperlink{class_cjt__trets_ad315f780dfe22f6730ee9ce9aa2b25d7}{afegir} (string tret, int id, \hyperlink{class_cjt__individus}{Cjt\+\_\+individus} \&x)
+\begin{DoxyCompactList}\small\item\em Modificadora del conjunt de trets. \end{DoxyCompactList}\item 
+void \hyperlink{class_cjt__trets_ae4152db728b8c78d6e56856e0e88de33}{treure} (string tret, int id, \hyperlink{class_cjt__individus}{Cjt\+\_\+individus} \&x)
+\begin{DoxyCompactList}\small\item\em Modificadora del conjunt de trets. \end{DoxyCompactList}\item 
+bool \hyperlink{class_cjt__trets_a6da10e61a25071a25eca708f61a1e33d}{existeix\+\_\+tret} (string tret)
+\begin{DoxyCompactList}\small\item\em Consulta si existeix el tret. \end{DoxyCompactList}\item 
+void \hyperlink{class_cjt__trets_ad53ad0f5574d551fdbc8f665323a1db7}{escriure\+\_\+tret} (string tret)
+\begin{DoxyCompactList}\small\item\em Operació d\textquotesingle{}escriptura del tret. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributs Privats}
+\begin{DoxyCompactItemize}
+\item 
+map$<$ string, \hyperlink{class_tret}{Tret} $>$ \hyperlink{class_cjt__trets_ab13190e3207e0e51bd78cf16b8ed5360}{trets}
+\begin{DoxyCompactList}\small\item\em Diccionari dels trets. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripció Detallada}
+Representa el conjunt de trets d\textquotesingle{}un experiment. 
+
+Ofereix operacions per afegir, treure, consultar existencia i escriure trets. 
+
+Definició a la línia 25 del fitxer Cjt\+\_\+trets.\+hh.
+
+
+
+\subsection{Documentació del Constructor i el Destructor}
+\index{Cjt\+\_\+trets@{Cjt\+\_\+trets}!Cjt\+\_\+trets@{Cjt\+\_\+trets}}
+\index{Cjt\+\_\+trets@{Cjt\+\_\+trets}!Cjt\+\_\+trets@{Cjt\+\_\+trets}}
+\subsubsection[{\texorpdfstring{Cjt\+\_\+trets()}{Cjt_trets()}}]{\setlength{\rightskip}{0pt plus 5cm}Cjt\+\_\+trets\+::\+Cjt\+\_\+trets (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_cjt__trets_a0f3d29b433ebfa6d9680e1ee0f39279b}{}\label{class_cjt__trets_a0f3d29b433ebfa6d9680e1ee0f39279b}
+
+
+Creadora per defecte. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El resultat es un \hyperlink{class_cjt__trets}{Cjt\+\_\+trets} buit 
+\end{DoxyPostcond}
+
+
+Definició a la línia 7 del fitxer Cjt\+\_\+trets.\+cc.
+
+
+\begin{DoxyCode}
+7 \{\}
+\end{DoxyCode}
+
+
+\subsection{Documentació de les Funcions Membre}
+\index{Cjt\+\_\+trets@{Cjt\+\_\+trets}!afegir@{afegir}}
+\index{afegir@{afegir}!Cjt\+\_\+trets@{Cjt\+\_\+trets}}
+\subsubsection[{\texorpdfstring{afegir(string tret, int id, Cjt\+\_\+individus \&x)}{afegir(string tret, int id, Cjt_individus &x)}}]{\setlength{\rightskip}{0pt plus 5cm}void Cjt\+\_\+trets\+::afegir (
+\begin{DoxyParamCaption}
+\item[{string}]{tret, }
+\item[{int}]{id, }
+\item[{{\bf Cjt\+\_\+individus} \&}]{x}
+\end{DoxyParamCaption}
+)}\hypertarget{class_cjt__trets_ad315f780dfe22f6730ee9ce9aa2b25d7}{}\label{class_cjt__trets_ad315f780dfe22f6730ee9ce9aa2b25d7}
+
+
+Modificadora del conjunt de trets. 
+
+\begin{DoxyPrecond}{Precondició}
+El tret no está present en el conjunt 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Si no hi era es crea, si hi era s\textquotesingle{}afegeix l\textquotesingle{}individu al tret 
+\end{DoxyPostcond}
+
+
+Definició a la línia 21 del fitxer Cjt\+\_\+trets.\+cc.
+
+
+\begin{DoxyCode}
+22 \{
+23   x.\hyperlink{class_cjt__individus_a66d3e1b39b40532a2e2cff60fbf0b72a}{afegir\_tret}(\textcolor{keywordtype}{id}, tret);\textcolor{comment}{// S'afegeix el tret a l'individu}
+24   \hyperlink{class_cjt__trets_ab13190e3207e0e51bd78cf16b8ed5360}{trets}[tret].afegir\_individu(\textcolor{keywordtype}{id}, x);\textcolor{comment}{// Si no existeix en el conjunt es crea}
+25 \}
+\end{DoxyCode}
+\index{Cjt\+\_\+trets@{Cjt\+\_\+trets}!treure@{treure}}
+\index{treure@{treure}!Cjt\+\_\+trets@{Cjt\+\_\+trets}}
+\subsubsection[{\texorpdfstring{treure(string tret, int id, Cjt\+\_\+individus \&x)}{treure(string tret, int id, Cjt_individus &x)}}]{\setlength{\rightskip}{0pt plus 5cm}void Cjt\+\_\+trets\+::treure (
+\begin{DoxyParamCaption}
+\item[{string}]{tret, }
+\item[{int}]{id, }
+\item[{{\bf Cjt\+\_\+individus} \&}]{x}
+\end{DoxyParamCaption}
+)}\hypertarget{class_cjt__trets_ae4152db728b8c78d6e56856e0e88de33}{}\label{class_cjt__trets_ae4152db728b8c78d6e56856e0e88de33}
+
+
+Modificadora del conjunt de trets. 
+
+\begin{DoxyPrecond}{Precondició}
+El tret está present en el conjunt 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Es treu l\textquotesingle{}individu del tret i si es qued buit s\textquotesingle{}elimina 
+\end{DoxyPostcond}
+
+
+Definició a la línia 27 del fitxer Cjt\+\_\+trets.\+cc.
+
+
+\begin{DoxyCode}
+28 \{
+29   x.\hyperlink{class_cjt__individus_ab2f75f67eeaa424ffe8773e47d3223e8}{treure\_tret}(\textcolor{keywordtype}{id}, tret);\textcolor{comment}{// Es true el tret de l'individu}
+30   \hyperlink{class_cjt__trets_ab13190e3207e0e51bd78cf16b8ed5360}{trets}[tret].treure\_individu(\textcolor{keywordtype}{id}, x);
+31   \textcolor{keywordflow}{if}(\hyperlink{class_cjt__trets_ab13190e3207e0e51bd78cf16b8ed5360}{trets}[tret].buit()) \hyperlink{class_cjt__trets_ab13190e3207e0e51bd78cf16b8ed5360}{trets}.erase(tret);\textcolor{comment}{// Si el tret queda buit s'elimina}
+32 \}
+\end{DoxyCode}
+\index{Cjt\+\_\+trets@{Cjt\+\_\+trets}!existeix\+\_\+tret@{existeix\+\_\+tret}}
+\index{existeix\+\_\+tret@{existeix\+\_\+tret}!Cjt\+\_\+trets@{Cjt\+\_\+trets}}
+\subsubsection[{\texorpdfstring{existeix\+\_\+tret(string tret)}{existeix_tret(string tret)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Cjt\+\_\+trets\+::existeix\+\_\+tret (
+\begin{DoxyParamCaption}
+\item[{string}]{tret}
+\end{DoxyParamCaption}
+)}\hypertarget{class_cjt__trets_a6da10e61a25071a25eca708f61a1e33d}{}\label{class_cjt__trets_a6da10e61a25071a25eca708f61a1e33d}
+
+
+Consulta si existeix el tret. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Indica si existeix el tret 
+\end{DoxyPostcond}
+
+
+Definició a la línia 9 del fitxer Cjt\+\_\+trets.\+cc.
+
+
+\begin{DoxyCode}
+10 \{
+11 \textcolor{comment}{// No es constant, ja que, al ser un diccionari si es consulta i no existeix es crea}
+12   \textcolor{keywordtype}{bool} existeix = \textcolor{keyword}{true};
+13   map<string, Tret>::const\_iterator it = \hyperlink{class_cjt__trets_ab13190e3207e0e51bd78cf16b8ed5360}{trets}.find(tret);
+14   \textcolor{keywordflow}{if}(it == \hyperlink{class_cjt__trets_ab13190e3207e0e51bd78cf16b8ed5360}{trets}.end()) \{\textcolor{comment}{// Si no hi es s'elimina el tret creat al consultar}
+15     existeix = \textcolor{keyword}{false};
+16     \hyperlink{class_cjt__trets_ab13190e3207e0e51bd78cf16b8ed5360}{trets}.erase(tret);
+17   \}
+18   \textcolor{keywordflow}{return} existeix;
+19 \}
+\end{DoxyCode}
+\index{Cjt\+\_\+trets@{Cjt\+\_\+trets}!escriure\+\_\+tret@{escriure\+\_\+tret}}
+\index{escriure\+\_\+tret@{escriure\+\_\+tret}!Cjt\+\_\+trets@{Cjt\+\_\+trets}}
+\subsubsection[{\texorpdfstring{escriure\+\_\+tret(string tret)}{escriure_tret(string tret)}}]{\setlength{\rightskip}{0pt plus 5cm}void Cjt\+\_\+trets\+::escriure\+\_\+tret (
+\begin{DoxyParamCaption}
+\item[{string}]{tret}
+\end{DoxyParamCaption}
+)}\hypertarget{class_cjt__trets_ad53ad0f5574d551fdbc8f665323a1db7}{}\label{class_cjt__trets_ad53ad0f5574d551fdbc8f665323a1db7}
+
+
+Operació d\textquotesingle{}escriptura del tret. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}escriu pel el canal de sortida estàndard el tret 
+\end{DoxyPostcond}
+
+
+Definició a la línia 34 del fitxer Cjt\+\_\+trets.\+cc.
+
+
+\begin{DoxyCode}
+35 \{
+36   cout << \textcolor{stringliteral}{"  "} << tret << endl;
+37   \hyperlink{class_cjt__trets_ab13190e3207e0e51bd78cf16b8ed5360}{trets}[tret].escriure();
+38 \}
+\end{DoxyCode}
+
+
+\subsection{Documentació de les Dades Membre}
+\index{Cjt\+\_\+trets@{Cjt\+\_\+trets}!trets@{trets}}
+\index{trets@{trets}!Cjt\+\_\+trets@{Cjt\+\_\+trets}}
+\subsubsection[{\texorpdfstring{trets}{trets}}]{\setlength{\rightskip}{0pt plus 5cm}map$<$string, {\bf Tret}$>$ Cjt\+\_\+trets\+::trets\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_cjt__trets_ab13190e3207e0e51bd78cf16b8ed5360}{}\label{class_cjt__trets_ab13190e3207e0e51bd78cf16b8ed5360}
+
+
+Diccionari dels trets. 
+
+
+
+Definició a la línia 31 del fitxer Cjt\+\_\+trets.\+hh.
+
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir dels següents fitxers\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_cjt__trets_8hh}{Cjt\+\_\+trets.\+hh}\item 
+\hyperlink{_cjt__trets_8cc}{Cjt\+\_\+trets.\+cc}\end{DoxyCompactItemize}

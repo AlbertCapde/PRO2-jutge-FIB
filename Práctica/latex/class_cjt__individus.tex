@@ -1,0 +1,436 @@
+\hypertarget{class_cjt__individus}{}\section{Referència de la Classe Cjt\+\_\+individus}
+\label{class_cjt__individus}\index{Cjt\+\_\+individus@{Cjt\+\_\+individus}}
+
+
+Representa el conjunt d\textquotesingle{}individus d\textquotesingle{}un experiment.  
+
+
+\subsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_cjt__individus_ace12a900a02d3b12c8067c7867618c50}{Cjt\+\_\+individus} ()
+\begin{DoxyCompactList}\small\item\em Creadora per defecte. \end{DoxyCompactList}\item 
+void \hyperlink{class_cjt__individus_a66d3e1b39b40532a2e2cff60fbf0b72a}{afegir\+\_\+tret} (int id, string tret)
+\begin{DoxyCompactList}\small\item\em Modificadora dels individus que presenten el tret. \end{DoxyCompactList}\item 
+void \hyperlink{class_cjt__individus_ab2f75f67eeaa424ffe8773e47d3223e8}{treure\+\_\+tret} (int id, string tret)
+\begin{DoxyCompactList}\small\item\em Modificadora dels individus que presenten el tret. \end{DoxyCompactList}\item 
+\hyperlink{class_cromosomes}{Cromosomes} \hyperlink{class_cjt__individus_a5c98261f78513b1b008cead471d8afa5}{consultar\+\_\+crom\+\_\+individu} (int id) const 
+\begin{DoxyCompactList}\small\item\em Consulta els cromosomes d\textquotesingle{}un individu. \end{DoxyCompactList}\item 
+bool \hyperlink{class_cjt__individus_ab7ef8ea63550958f2025a684dc804308}{individu\+\_\+te\+\_\+tret} (int id, string tret)
+\begin{DoxyCompactList}\small\item\em Consulta si l\textquotesingle{}individu té el tret. \end{DoxyCompactList}\item 
+void \hyperlink{class_cjt__individus_a478b829d6a11c5259a36a8bd53662e7d}{llegir} (int n, int m)
+\begin{DoxyCompactList}\small\item\em Operació de lectura. \end{DoxyCompactList}\item 
+void \hyperlink{class_cjt__individus_aafb2e0f4456390cbe83009aa542b0991}{escriure} (int id) const 
+\begin{DoxyCompactList}\small\item\em Operació d\textquotesingle{}escriptura de l\textquotesingle{}individu. \end{DoxyCompactList}\item 
+void \hyperlink{class_cjt__individus_afbd2a5f911caa9d9ca05470781c395a2}{escriure\+\_\+distribucio\+\_\+tret} (string tret)
+\begin{DoxyCompactList}\small\item\em Operació d\textquotesingle{}escriptura de la distribució del tret. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Mètodes Privats}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_cjt__individus_a569a1232f6660f888176cacd07df134a}{distribucio} (const \hyperlink{class_bin_tree}{Bin\+Tree}$<$ int $>$ \&a, \hyperlink{class_bin_tree}{Bin\+Tree}$<$ int $>$ \&dist, string tret)
+\begin{DoxyCompactList}\small\item\em Operació que obté la distribució d\textquotesingle{}un tret. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Mètodes Privats Estàtics}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_cjt__individus_af4d73e9f298f7fab8411f2485a7c8fc5}{llegir\+\_\+arbre\+\_\+genealogic} (\hyperlink{class_bin_tree}{Bin\+Tree}$<$ int $>$ \&abregen)
+\begin{DoxyCompactList}\small\item\em Operació de lectura de l\textquotesingle{}arbre genealògic. \end{DoxyCompactList}\item 
+static void \hyperlink{class_cjt__individus_ac72868ef20cbed360206829ff580c38c}{escriure\+\_\+distribucio} (const \hyperlink{class_bin_tree}{Bin\+Tree}$<$ int $>$ \&dist)
+\begin{DoxyCompactList}\small\item\em Operació d\textquotesingle{}escriptura de la distribució del tret. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributs Privats}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_bin_tree}{Bin\+Tree}$<$ int $>$ \hyperlink{class_cjt__individus_aa4786868783b8da4233a9b844ad376ce}{arbregen}
+\begin{DoxyCompactList}\small\item\em Arbre genealogic, on cada node té l\textquotesingle{}identificador d\textquotesingle{}un individu. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{class_individu}{Individu} $>$ \hyperlink{class_cjt__individus_aa28716121e4fbc5b6a90150748c9fc0b}{individus}
+\begin{DoxyCompactList}\small\item\em Vector d\textquotesingle{}individus. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripció Detallada}
+Representa el conjunt d\textquotesingle{}individus d\textquotesingle{}un experiment. 
+
+Ofereix operacions de lectura de l\textquotesingle{}experiment, escriptura i consultes d\textquotesingle{}un individu. 
+
+Definició a la línia 24 del fitxer Cjt\+\_\+individus.\+hh.
+
+
+
+\subsection{Documentació del Constructor i el Destructor}
+\index{Cjt\+\_\+individus@{Cjt\+\_\+individus}!Cjt\+\_\+individus@{Cjt\+\_\+individus}}
+\index{Cjt\+\_\+individus@{Cjt\+\_\+individus}!Cjt\+\_\+individus@{Cjt\+\_\+individus}}
+\subsubsection[{\texorpdfstring{Cjt\+\_\+individus()}{Cjt_individus()}}]{\setlength{\rightskip}{0pt plus 5cm}Cjt\+\_\+individus\+::\+Cjt\+\_\+individus (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_cjt__individus_ace12a900a02d3b12c8067c7867618c50}{}\label{class_cjt__individus_ace12a900a02d3b12c8067c7867618c50}
+
+
+Creadora per defecte. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El resultat es un \hyperlink{class_cjt__individus}{Cjt\+\_\+individus} buit 
+\end{DoxyPostcond}
+
+
+Definició a la línia 7 del fitxer Cjt\+\_\+individus.\+cc.
+
+
+\begin{DoxyCode}
+7 \{\}
+\end{DoxyCode}
+
+
+\subsection{Documentació de les Funcions Membre}
+\index{Cjt\+\_\+individus@{Cjt\+\_\+individus}!afegir\+\_\+tret@{afegir\+\_\+tret}}
+\index{afegir\+\_\+tret@{afegir\+\_\+tret}!Cjt\+\_\+individus@{Cjt\+\_\+individus}}
+\subsubsection[{\texorpdfstring{afegir\+\_\+tret(int id, string tret)}{afegir_tret(int id, string tret)}}]{\setlength{\rightskip}{0pt plus 5cm}void Cjt\+\_\+individus\+::afegir\+\_\+tret (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{string}]{tret}
+\end{DoxyParamCaption}
+)}\hypertarget{class_cjt__individus_a66d3e1b39b40532a2e2cff60fbf0b72a}{}\label{class_cjt__individus_a66d3e1b39b40532a2e2cff60fbf0b72a}
+
+
+Modificadora dels individus que presenten el tret. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}afegeix el tret a l\textquotesingle{}individu 
+\end{DoxyPostcond}
+
+
+Definició a la línia 19 del fitxer Cjt\+\_\+individus.\+cc.
+
+
+\begin{DoxyCode}
+20 \{
+21   \hyperlink{class_cjt__individus_aa28716121e4fbc5b6a90150748c9fc0b}{individus}[\textcolor{keywordtype}{id}-1].afegir(tret);
+22 \}
+\end{DoxyCode}
+\index{Cjt\+\_\+individus@{Cjt\+\_\+individus}!treure\+\_\+tret@{treure\+\_\+tret}}
+\index{treure\+\_\+tret@{treure\+\_\+tret}!Cjt\+\_\+individus@{Cjt\+\_\+individus}}
+\subsubsection[{\texorpdfstring{treure\+\_\+tret(int id, string tret)}{treure_tret(int id, string tret)}}]{\setlength{\rightskip}{0pt plus 5cm}void Cjt\+\_\+individus\+::treure\+\_\+tret (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{string}]{tret}
+\end{DoxyParamCaption}
+)}\hypertarget{class_cjt__individus_ab2f75f67eeaa424ffe8773e47d3223e8}{}\label{class_cjt__individus_ab2f75f67eeaa424ffe8773e47d3223e8}
+
+
+Modificadora dels individus que presenten el tret. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Es treu el tret de l\textquotesingle{}individu 
+\end{DoxyPostcond}
+
+
+Definició a la línia 24 del fitxer Cjt\+\_\+individus.\+cc.
+
+
+\begin{DoxyCode}
+25 \{
+26   \hyperlink{class_cjt__individus_aa28716121e4fbc5b6a90150748c9fc0b}{individus}[\textcolor{keywordtype}{id}-1].treure(tret);
+27 \}
+\end{DoxyCode}
+\index{Cjt\+\_\+individus@{Cjt\+\_\+individus}!consultar\+\_\+crom\+\_\+individu@{consultar\+\_\+crom\+\_\+individu}}
+\index{consultar\+\_\+crom\+\_\+individu@{consultar\+\_\+crom\+\_\+individu}!Cjt\+\_\+individus@{Cjt\+\_\+individus}}
+\subsubsection[{\texorpdfstring{consultar\+\_\+crom\+\_\+individu(int id) const }{consultar_crom_individu(int id) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cromosomes} Cjt\+\_\+individus\+::consultar\+\_\+crom\+\_\+individu (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_cjt__individus_a5c98261f78513b1b008cead471d8afa5}{}\label{class_cjt__individus_a5c98261f78513b1b008cead471d8afa5}
+
+
+Consulta els cromosomes d\textquotesingle{}un individu. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Indica els cromosomes d\textquotesingle{}un individu 
+\end{DoxyPostcond}
+
+
+Definició a la línia 9 del fitxer Cjt\+\_\+individus.\+cc.
+
+
+\begin{DoxyCode}
+10 \{
+11   \textcolor{keywordflow}{return} \hyperlink{class_cjt__individus_aa28716121e4fbc5b6a90150748c9fc0b}{individus}[\textcolor{keywordtype}{id}-1].consultar\_crom();
+12 \}
+\end{DoxyCode}
+\index{Cjt\+\_\+individus@{Cjt\+\_\+individus}!individu\+\_\+te\+\_\+tret@{individu\+\_\+te\+\_\+tret}}
+\index{individu\+\_\+te\+\_\+tret@{individu\+\_\+te\+\_\+tret}!Cjt\+\_\+individus@{Cjt\+\_\+individus}}
+\subsubsection[{\texorpdfstring{individu\+\_\+te\+\_\+tret(int id, string tret)}{individu_te_tret(int id, string tret)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Cjt\+\_\+individus\+::individu\+\_\+te\+\_\+tret (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{string}]{tret}
+\end{DoxyParamCaption}
+)}\hypertarget{class_cjt__individus_ab7ef8ea63550958f2025a684dc804308}{}\label{class_cjt__individus_ab7ef8ea63550958f2025a684dc804308}
+
+
+Consulta si l\textquotesingle{}individu té el tret. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Indica si presenta el tret 
+\end{DoxyPostcond}
+
+
+Definició a la línia 14 del fitxer Cjt\+\_\+individus.\+cc.
+
+
+\begin{DoxyCode}
+15 \{
+16   \textcolor{keywordflow}{return} \hyperlink{class_cjt__individus_aa28716121e4fbc5b6a90150748c9fc0b}{individus}[\textcolor{keywordtype}{id}-1].te\_tret(tret);
+17 \}
+\end{DoxyCode}
+\index{Cjt\+\_\+individus@{Cjt\+\_\+individus}!llegir@{llegir}}
+\index{llegir@{llegir}!Cjt\+\_\+individus@{Cjt\+\_\+individus}}
+\subsubsection[{\texorpdfstring{llegir(int n, int m)}{llegir(int n, int m)}}]{\setlength{\rightskip}{0pt plus 5cm}void Cjt\+\_\+individus\+::llegir (
+\begin{DoxyParamCaption}
+\item[{int}]{n, }
+\item[{int}]{m}
+\end{DoxyParamCaption}
+)}\hypertarget{class_cjt__individus_a478b829d6a11c5259a36a8bd53662e7d}{}\label{class_cjt__individus_a478b829d6a11c5259a36a8bd53662e7d}
+
+
+Operació de lectura. 
+
+\begin{DoxyPrecond}{Precondició}
+Estàn preparats al canal estàndard d\textquotesingle{}entrada un enter n $>$= 3, que representa el nombre d\textquotesingle{}individus, i el nombre de gens de cada cromosoma m $>$= 1 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El parametre implícit conté el conjunt d\textquotesingle{}individus llegit del canal estandard d\textquotesingle{}entrada 
+\end{DoxyPostcond}
+
+
+Definició a la línia 43 del fitxer Cjt\+\_\+individus.\+cc.
+
+
+\begin{DoxyCode}
+44 \{
+45   \hyperlink{class_cjt__individus_aa28716121e4fbc5b6a90150748c9fc0b}{individus} = vector<Individu>(n);
+46   \hyperlink{class_cjt__individus_af4d73e9f298f7fab8411f2485a7c8fc5}{llegir\_arbre\_genealogic}(\hyperlink{class_cjt__individus_aa4786868783b8da4233a9b844ad376ce}{arbregen});
+47   \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < n; ++j) \{
+48     \hyperlink{class_individu}{Individu} x;
+49     x.\hyperlink{class_individu_a03cd34a1eb0eaf4e0a1280ca8cc38a5f}{llegir\_individu}(m);
+50     \hyperlink{class_cjt__individus_aa28716121e4fbc5b6a90150748c9fc0b}{individus}[j] = x;
+51   \}
+52 \}
+\end{DoxyCode}
+\index{Cjt\+\_\+individus@{Cjt\+\_\+individus}!escriure@{escriure}}
+\index{escriure@{escriure}!Cjt\+\_\+individus@{Cjt\+\_\+individus}}
+\subsubsection[{\texorpdfstring{escriure(int id) const }{escriure(int id) const }}]{\setlength{\rightskip}{0pt plus 5cm}void Cjt\+\_\+individus\+::escriure (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_cjt__individus_aafb2e0f4456390cbe83009aa542b0991}{}\label{class_cjt__individus_aafb2e0f4456390cbe83009aa542b0991}
+
+
+Operació d\textquotesingle{}escriptura de l\textquotesingle{}individu. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}escriu pel el canal de sortida estàndard l\textquotesingle{}individu 
+\end{DoxyPostcond}
+
+
+Definició a la línia 54 del fitxer Cjt\+\_\+individus.\+cc.
+
+
+\begin{DoxyCode}
+55 \{
+56   \hyperlink{class_cjt__individus_aa28716121e4fbc5b6a90150748c9fc0b}{individus}[\textcolor{keywordtype}{id}-1].escriure\_individu();
+57 \}
+\end{DoxyCode}
+\index{Cjt\+\_\+individus@{Cjt\+\_\+individus}!escriure\+\_\+distribucio\+\_\+tret@{escriure\+\_\+distribucio\+\_\+tret}}
+\index{escriure\+\_\+distribucio\+\_\+tret@{escriure\+\_\+distribucio\+\_\+tret}!Cjt\+\_\+individus@{Cjt\+\_\+individus}}
+\subsubsection[{\texorpdfstring{escriure\+\_\+distribucio\+\_\+tret(string tret)}{escriure_distribucio_tret(string tret)}}]{\setlength{\rightskip}{0pt plus 5cm}void Cjt\+\_\+individus\+::escriure\+\_\+distribucio\+\_\+tret (
+\begin{DoxyParamCaption}
+\item[{string}]{tret}
+\end{DoxyParamCaption}
+)}\hypertarget{class_cjt__individus_afbd2a5f911caa9d9ca05470781c395a2}{}\label{class_cjt__individus_afbd2a5f911caa9d9ca05470781c395a2}
+
+
+Operació d\textquotesingle{}escriptura de la distribució del tret. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}escriu pel canal de sortida estàndard la distribució 
+\end{DoxyPostcond}
+
+
+Definició a la línia 92 del fitxer Cjt\+\_\+individus.\+cc.
+
+
+\begin{DoxyCode}
+93 \{
+94   \hyperlink{class_bin_tree}{BinTree<int>} dist;
+95   cout << \textcolor{stringliteral}{" "};
+96   \hyperlink{class_cjt__individus_a569a1232f6660f888176cacd07df134a}{distribucio}(\hyperlink{class_cjt__individus_aa4786868783b8da4233a9b844ad376ce}{arbregen}, dist, tret);
+97   \hyperlink{class_cjt__individus_ac72868ef20cbed360206829ff580c38c}{escriure\_distribucio}(dist);
+98   cout << endl;
+99 \}
+\end{DoxyCode}
+\index{Cjt\+\_\+individus@{Cjt\+\_\+individus}!llegir\+\_\+arbre\+\_\+genealogic@{llegir\+\_\+arbre\+\_\+genealogic}}
+\index{llegir\+\_\+arbre\+\_\+genealogic@{llegir\+\_\+arbre\+\_\+genealogic}!Cjt\+\_\+individus@{Cjt\+\_\+individus}}
+\subsubsection[{\texorpdfstring{llegir\+\_\+arbre\+\_\+genealogic(\+Bin\+Tree$<$ int $>$ \&abregen)}{llegir_arbre_genealogic(BinTree< int > &abregen)}}]{\setlength{\rightskip}{0pt plus 5cm}void Cjt\+\_\+individus\+::llegir\+\_\+arbre\+\_\+genealogic (
+\begin{DoxyParamCaption}
+\item[{{\bf Bin\+Tree}$<$ int $>$ \&}]{abregen}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\hypertarget{class_cjt__individus_af4d73e9f298f7fab8411f2485a7c8fc5}{}\label{class_cjt__individus_af4d73e9f298f7fab8411f2485a7c8fc5}
+
+
+Operació de lectura de l\textquotesingle{}arbre genealògic. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Es llegeix pel canal estàndard d\textquotesingle{}entrada la relació de parentiu i es forma l\textquotesingle{}arbre genealògic 
+\end{DoxyPostcond}
+
+
+Definició a la línia 29 del fitxer Cjt\+\_\+individus.\+cc.
+
+
+\begin{DoxyCode}
+30 \{
+31 \textcolor{comment}{// Es llegeix l'abre en preordre}
+32   \textcolor{keywordtype}{int} x;
+33   cin >> x;
+34   \textcolor{keywordflow}{if} (x!=0)\{
+35     \hyperlink{class_bin_tree}{BinTree<int>} l;
+36     \hyperlink{class_cjt__individus_af4d73e9f298f7fab8411f2485a7c8fc5}{llegir\_arbre\_genealogic}(l);
+37     \hyperlink{class_bin_tree}{BinTree<int>} r;
+38     \hyperlink{class_cjt__individus_af4d73e9f298f7fab8411f2485a7c8fc5}{llegir\_arbre\_genealogic}(r);
+39     a=\hyperlink{class_bin_tree}{BinTree<int>}(x,l,r);
+40   \}
+41 \}
+\end{DoxyCode}
+\index{Cjt\+\_\+individus@{Cjt\+\_\+individus}!escriure\+\_\+distribucio@{escriure\+\_\+distribucio}}
+\index{escriure\+\_\+distribucio@{escriure\+\_\+distribucio}!Cjt\+\_\+individus@{Cjt\+\_\+individus}}
+\subsubsection[{\texorpdfstring{escriure\+\_\+distribucio(const Bin\+Tree$<$ int $>$ \&dist)}{escriure_distribucio(const BinTree< int > &dist)}}]{\setlength{\rightskip}{0pt plus 5cm}void Cjt\+\_\+individus\+::escriure\+\_\+distribucio (
+\begin{DoxyParamCaption}
+\item[{const {\bf Bin\+Tree}$<$ int $>$ \&}]{dist}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\hypertarget{class_cjt__individus_ac72868ef20cbed360206829ff580c38c}{}\label{class_cjt__individus_ac72868ef20cbed360206829ff580c38c}
+
+
+Operació d\textquotesingle{}escriptura de la distribució del tret. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}escriu pel canal de sortida estàndard la distribució d\textquotesingle{}un tret en inordre 
+\end{DoxyPostcond}
+
+
+Definició a la línia 81 del fitxer Cjt\+\_\+individus.\+cc.
+
+
+\begin{DoxyCode}
+82 \{
+83 \textcolor{comment}{// Escriu arbre en inordre}
+84   \textcolor{keywordflow}{if} (not a.empty()) \{
+85     \textcolor{keywordtype}{int} x = a.value();
+86     \hyperlink{class_cjt__individus_ac72868ef20cbed360206829ff580c38c}{escriure\_distribucio}(a.left()); 
+87     cout << \textcolor{stringliteral}{" "} << x;
+88     \hyperlink{class_cjt__individus_ac72868ef20cbed360206829ff580c38c}{escriure\_distribucio}(a.right());
+89   \}
+90 \}
+\end{DoxyCode}
+\index{Cjt\+\_\+individus@{Cjt\+\_\+individus}!distribucio@{distribucio}}
+\index{distribucio@{distribucio}!Cjt\+\_\+individus@{Cjt\+\_\+individus}}
+\subsubsection[{\texorpdfstring{distribucio(const Bin\+Tree$<$ int $>$ \&a, Bin\+Tree$<$ int $>$ \&dist, string tret)}{distribucio(const BinTree< int > &a, BinTree< int > &dist, string tret)}}]{\setlength{\rightskip}{0pt plus 5cm}void Cjt\+\_\+individus\+::distribucio (
+\begin{DoxyParamCaption}
+\item[{const {\bf Bin\+Tree}$<$ int $>$ \&}]{a, }
+\item[{{\bf Bin\+Tree}$<$ int $>$ \&}]{dist, }
+\item[{string}]{tret}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_cjt__individus_a569a1232f6660f888176cacd07df134a}{}\label{class_cjt__individus_a569a1232f6660f888176cacd07df134a}
+
+
+Operació que obté la distribució d\textquotesingle{}un tret. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Es forma un nou subarbre de la distribució 
+\end{DoxyPostcond}
+
+
+Definició a la línia 59 del fitxer Cjt\+\_\+individus.\+cc.
+
+
+\begin{DoxyCode}
+60 \{
+61   \textcolor{keywordflow}{if}(!a.\hyperlink{class_bin_tree_a9ca8d7ae95b9bed51eb43f30c8d2bd58}{empty}()) \{
+62     \textcolor{keywordtype}{int} x = a.\hyperlink{class_bin_tree_af545517333e94fdbfccfbc7df7d961fe}{value}();
+63     \textcolor{keywordflow}{if}(a.\hyperlink{class_bin_tree_a781025fb1c3693e91e851d55b181bedd}{left}().\hyperlink{class_bin_tree_a9ca8d7ae95b9bed51eb43f30c8d2bd58}{empty}()) \{\textcolor{comment}{// Fulla}
+64       \textcolor{keywordflow}{if}(\hyperlink{class_cjt__individus_aa28716121e4fbc5b6a90150748c9fc0b}{individus}[x-1].te\_tret(tret)) dist = \hyperlink{class_bin_tree}{BinTree<int>}(x);
+65       \textcolor{keywordflow}{else} dist = \hyperlink{class_bin_tree}{BinTree<int>}();
+66     \}
+67     \textcolor{keywordflow}{else} \{
+68       \hyperlink{class_bin_tree}{BinTree<int>} l;
+69       \hyperlink{class_bin_tree}{BinTree<int>} r;
+70       \hyperlink{class_cjt__individus_a569a1232f6660f888176cacd07df134a}{distribucio}(a.\hyperlink{class_bin_tree_a781025fb1c3693e91e851d55b181bedd}{left}(),l,tret);
+71       \hyperlink{class_cjt__individus_a569a1232f6660f888176cacd07df134a}{distribucio}(a.\hyperlink{class_bin_tree_a009c4bb95a25a1b639da637de32101ce}{right}(),r,tret);
+72       \textcolor{keywordflow}{if}(\hyperlink{class_cjt__individus_aa28716121e4fbc5b6a90150748c9fc0b}{individus}[x-1].te\_tret(tret)) dist = \hyperlink{class_bin_tree}{BinTree<int>}(x, l, r);
+73       \textcolor{keywordflow}{else} \{
+74         \textcolor{keywordflow}{if}(l.\hyperlink{class_bin_tree_a9ca8d7ae95b9bed51eb43f30c8d2bd58}{empty}() and r.\hyperlink{class_bin_tree_a9ca8d7ae95b9bed51eb43f30c8d2bd58}{empty}()) dist=\hyperlink{class_bin_tree}{BinTree<int>}();\textcolor{comment}{// Si no té el tret i els
+       progenitors tampoc llavors arbre buit}
+75         \textcolor{keywordflow}{else} dist=\hyperlink{class_bin_tree}{BinTree<int>}(-x,l,r);\textcolor{comment}{// Si no té el tret pero si els progenitors llavors
+       s'afegeix amb signe '-'}
+76       \}
+77     \}
+78   \}
+79 \}
+\end{DoxyCode}
+
+
+\subsection{Documentació de les Dades Membre}
+\index{Cjt\+\_\+individus@{Cjt\+\_\+individus}!arbregen@{arbregen}}
+\index{arbregen@{arbregen}!Cjt\+\_\+individus@{Cjt\+\_\+individus}}
+\subsubsection[{\texorpdfstring{arbregen}{arbregen}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bin\+Tree}$<$int$>$ Cjt\+\_\+individus\+::arbregen\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_cjt__individus_aa4786868783b8da4233a9b844ad376ce}{}\label{class_cjt__individus_aa4786868783b8da4233a9b844ad376ce}
+
+
+Arbre genealogic, on cada node té l\textquotesingle{}identificador d\textquotesingle{}un individu. 
+
+
+
+Definició a la línia 29 del fitxer Cjt\+\_\+individus.\+hh.
+
+\index{Cjt\+\_\+individus@{Cjt\+\_\+individus}!individus@{individus}}
+\index{individus@{individus}!Cjt\+\_\+individus@{Cjt\+\_\+individus}}
+\subsubsection[{\texorpdfstring{individus}{individus}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Individu}$>$ Cjt\+\_\+individus\+::individus\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_cjt__individus_aa28716121e4fbc5b6a90150748c9fc0b}{}\label{class_cjt__individus_aa28716121e4fbc5b6a90150748c9fc0b}
+
+
+Vector d\textquotesingle{}individus. 
+
+Ordenat creixentment segons el seu identificador 
+
+Definició a la línia 34 del fitxer Cjt\+\_\+individus.\+hh.
+
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir dels següents fitxers\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_cjt__individus_8hh}{Cjt\+\_\+individus.\+hh}\item 
+\hyperlink{_cjt__individus_8cc}{Cjt\+\_\+individus.\+cc}\end{DoxyCompactItemize}

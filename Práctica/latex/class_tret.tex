@@ -1,0 +1,267 @@
+\hypertarget{class_tret}{}\section{Referència de la Classe Tret}
+\label{class_tret}\index{Tret@{Tret}}
+
+
+Representa l\textquotesingle{}informació i les operacions associades a un tret.  
+
+
+\subsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_tret_a3c892a10a6d209029a303b46b1deff17}{Tret} ()
+\begin{DoxyCompactList}\small\item\em Creador per defecte. \end{DoxyCompactList}\item 
+void \hyperlink{class_tret_ad71b260f24c6e658970654561d4b117f}{afegir\+\_\+individu} (int id, const \hyperlink{class_cjt__individus}{Cjt\+\_\+individus} \&x)
+\begin{DoxyCompactList}\small\item\em Modificadora dels individus que presenten el tret i la combinació \end{DoxyCompactList}\item 
+void \hyperlink{class_tret_aa30223a5d6010917441ac271294c23f4}{treure\+\_\+individu} (int id, const \hyperlink{class_cjt__individus}{Cjt\+\_\+individus} \&x)
+\begin{DoxyCompactList}\small\item\em Modificadora dels individus que presenten el tret i la combinació \end{DoxyCompactList}\item 
+bool \hyperlink{class_tret_a92ff938f063b16aa25033aa8a6934282}{buit} () const 
+\begin{DoxyCompactList}\small\item\em Consulta el tret. \end{DoxyCompactList}\item 
+void \hyperlink{class_tret_a3aeb2791bf24dc0c800af62b0fcbab27}{escriure} () const 
+\begin{DoxyCompactList}\small\item\em Operació de escriptura. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Mètodes Privats}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_tret_a0b2a7bd1d845412f4fc94d0625a9e782}{calcular\+\_\+combinacio} (const \hyperlink{class_cjt__individus}{Cjt\+\_\+individus} \&x)
+\begin{DoxyCompactList}\small\item\em Calcula la combinacio de tots els individus que presenten el tret. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributs Privats}
+\begin{DoxyCompactItemize}
+\item 
+set$<$ int $>$ \hyperlink{class_tret_a918c15168c43121f4d2c1737165b607c}{ids}
+\begin{DoxyCompactList}\small\item\em Conjunt dels identificadores dels individus que presenten el tret. \end{DoxyCompactList}\item 
+\hyperlink{class_cromosomes}{Cromosomes} \hyperlink{class_tret_aa3cd7d694d507642466ccba3fe92a077}{combinacio}
+\begin{DoxyCompactList}\small\item\em Combinacio dels cromosomes dels individus que manifestin el tret. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripció Detallada}
+Representa l\textquotesingle{}informació i les operacions associades a un tret. 
+
+Conté els individus que presenten el tret i la combinació de gens que el produeix. 
+
+Definició a la línia 25 del fitxer Tret.\+hh.
+
+
+
+\subsection{Documentació del Constructor i el Destructor}
+\index{Tret@{Tret}!Tret@{Tret}}
+\index{Tret@{Tret}!Tret@{Tret}}
+\subsubsection[{\texorpdfstring{Tret()}{Tret()}}]{\setlength{\rightskip}{0pt plus 5cm}Tret\+::\+Tret (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_tret_a3c892a10a6d209029a303b46b1deff17}{}\label{class_tret_a3c892a10a6d209029a303b46b1deff17}
+
+
+Creador per defecte. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El resultat es un tret buit 
+\end{DoxyPostcond}
+
+
+Definició a la línia 7 del fitxer Tret.\+cc.
+
+
+\begin{DoxyCode}
+7 \{\}
+\end{DoxyCode}
+
+
+\subsection{Documentació de les Funcions Membre}
+\index{Tret@{Tret}!afegir\+\_\+individu@{afegir\+\_\+individu}}
+\index{afegir\+\_\+individu@{afegir\+\_\+individu}!Tret@{Tret}}
+\subsubsection[{\texorpdfstring{afegir\+\_\+individu(int id, const Cjt\+\_\+individus \&x)}{afegir_individu(int id, const Cjt_individus &x)}}]{\setlength{\rightskip}{0pt plus 5cm}void Tret\+::afegir\+\_\+individu (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{const {\bf Cjt\+\_\+individus} \&}]{x}
+\end{DoxyParamCaption}
+)}\hypertarget{class_tret_ad71b260f24c6e658970654561d4b117f}{}\label{class_tret_ad71b260f24c6e658970654561d4b117f}
+
+
+Modificadora dels individus que presenten el tret i la combinació 
+
+\begin{DoxyPrecond}{Precondició}
+L\textquotesingle{}individu no presenta el tret 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}afegeix l\textquotesingle{}individu al tret i calcula nova combinació 
+\end{DoxyPostcond}
+
+
+Definició a la línia 22 del fitxer Tret.\+cc.
+
+
+\begin{DoxyCode}
+23 \{
+24 \textcolor{comment}{// Al afegir nou individu no es necesari recalcular tota la combinacio, }
+25 \textcolor{comment}{// només afegir les noves restriccions a les ja presents.}
+26   \hyperlink{class_tret_a918c15168c43121f4d2c1737165b607c}{ids}.insert(\textcolor{keywordtype}{id});
+27   \hyperlink{class_cromosomes}{Cromosomes} comb;
+28   comb = x.\hyperlink{class_cjt__individus_a5c98261f78513b1b008cead471d8afa5}{consultar\_crom\_individu}(\textcolor{keywordtype}{id});
+29   \textcolor{keywordflow}{if}(\hyperlink{class_tret_a918c15168c43121f4d2c1737165b607c}{ids}.size() == 1) \hyperlink{class_tret_aa3cd7d694d507642466ccba3fe92a077}{combinacio} = comb;\textcolor{comment}{// En cas de que només hi hagi un individu que el
+       presenti}
+30   \textcolor{keywordflow}{else} \{
+31     \hyperlink{class_cromosomes}{Cromosomes} comb;
+32     comb = x.\hyperlink{class_cjt__individus_a5c98261f78513b1b008cead471d8afa5}{consultar\_crom\_individu}(\textcolor{keywordtype}{id});
+33     \hyperlink{class_tret_aa3cd7d694d507642466ccba3fe92a077}{combinacio}.\hyperlink{class_cromosomes_a3453b58fad109a8317018f8349852d55}{combinacio\_crom}(comb);
+34   \}
+35 \}
+\end{DoxyCode}
+\index{Tret@{Tret}!treure\+\_\+individu@{treure\+\_\+individu}}
+\index{treure\+\_\+individu@{treure\+\_\+individu}!Tret@{Tret}}
+\subsubsection[{\texorpdfstring{treure\+\_\+individu(int id, const Cjt\+\_\+individus \&x)}{treure_individu(int id, const Cjt_individus &x)}}]{\setlength{\rightskip}{0pt plus 5cm}void Tret\+::treure\+\_\+individu (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{const {\bf Cjt\+\_\+individus} \&}]{x}
+\end{DoxyParamCaption}
+)}\hypertarget{class_tret_aa30223a5d6010917441ac271294c23f4}{}\label{class_tret_aa30223a5d6010917441ac271294c23f4}
+
+
+Modificadora dels individus que presenten el tret i la combinació 
+
+\begin{DoxyPrecond}{Precondició}
+L\textquotesingle{}individu presenta el tret 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Es treu l\textquotesingle{}individu del tret i calcula nova combinació 
+\end{DoxyPostcond}
+
+
+Definició a la línia 37 del fitxer Tret.\+cc.
+
+
+\begin{DoxyCode}
+38 \{
+39   \hyperlink{class_tret_a918c15168c43121f4d2c1737165b607c}{ids}.erase(\textcolor{keywordtype}{id});
+40   \textcolor{keywordflow}{if}(!\hyperlink{class_tret_a918c15168c43121f4d2c1737165b607c}{ids}.empty()) \hyperlink{class_tret_a0b2a7bd1d845412f4fc94d0625a9e782}{calcular\_combinacio}(x);\textcolor{comment}{// Si no es queda buit es calcula nova
+       combinació}
+41 \}
+\end{DoxyCode}
+\index{Tret@{Tret}!buit@{buit}}
+\index{buit@{buit}!Tret@{Tret}}
+\subsubsection[{\texorpdfstring{buit() const }{buit() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Tret\+::buit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_tret_a92ff938f063b16aa25033aa8a6934282}{}\label{class_tret_a92ff938f063b16aa25033aa8a6934282}
+
+
+Consulta el tret. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Consulta si el tret no té cap individu 
+\end{DoxyPostcond}
+
+
+Definició a la línia 43 del fitxer Tret.\+cc.
+
+
+\begin{DoxyCode}
+44 \{
+45   \textcolor{keywordflow}{return} \hyperlink{class_tret_a918c15168c43121f4d2c1737165b607c}{ids}.empty();
+46 \}
+\end{DoxyCode}
+\index{Tret@{Tret}!escriure@{escriure}}
+\index{escriure@{escriure}!Tret@{Tret}}
+\subsubsection[{\texorpdfstring{escriure() const }{escriure() const }}]{\setlength{\rightskip}{0pt plus 5cm}void Tret\+::escriure (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_tret_a3aeb2791bf24dc0c800af62b0fcbab27}{}\label{class_tret_a3aeb2791bf24dc0c800af62b0fcbab27}
+
+
+Operació de escriptura. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}escriu pel el canal de sortida estàndard la combinació i els individus que la presenten 
+\end{DoxyPostcond}
+
+
+Definició a la línia 48 del fitxer Tret.\+cc.
+
+
+\begin{DoxyCode}
+49 \{
+50   \hyperlink{class_tret_aa3cd7d694d507642466ccba3fe92a077}{combinacio}.\hyperlink{class_cromosomes_a82634290c5bd73c827034902404c90cf}{escriure\_cromosomes}();
+51   set<int>::const\_iterator it = \hyperlink{class_tret_a918c15168c43121f4d2c1737165b607c}{ids}.begin();
+52   \textcolor{keywordflow}{while} (it != \hyperlink{class_tret_a918c15168c43121f4d2c1737165b607c}{ids}.end()) \{
+53     cout << \textcolor{stringliteral}{"  "} << *it << endl;
+54     ++it;
+55   \}
+56 \}
+\end{DoxyCode}
+\index{Tret@{Tret}!calcular\+\_\+combinacio@{calcular\+\_\+combinacio}}
+\index{calcular\+\_\+combinacio@{calcular\+\_\+combinacio}!Tret@{Tret}}
+\subsubsection[{\texorpdfstring{calcular\+\_\+combinacio(const Cjt\+\_\+individus \&x)}{calcular_combinacio(const Cjt_individus &x)}}]{\setlength{\rightskip}{0pt plus 5cm}void Tret\+::calcular\+\_\+combinacio (
+\begin{DoxyParamCaption}
+\item[{const {\bf Cjt\+\_\+individus} \&}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_tret_a0b2a7bd1d845412f4fc94d0625a9e782}{}\label{class_tret_a0b2a7bd1d845412f4fc94d0625a9e782}
+
+
+Calcula la combinacio de tots els individus que presenten el tret. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+La combinació pasa a ser la intersecció del individus presents 
+\end{DoxyPostcond}
+
+
+Definició a la línia 9 del fitxer Tret.\+cc.
+
+
+\begin{DoxyCode}
+10 \{
+11   set<int>::const\_iterator it = \hyperlink{class_tret_a918c15168c43121f4d2c1737165b607c}{ids}.begin();
+12   \hyperlink{class_tret_aa3cd7d694d507642466ccba3fe92a077}{combinacio} = x.\hyperlink{class_cjt__individus_a5c98261f78513b1b008cead471d8afa5}{consultar\_crom\_individu}(*it);\textcolor{comment}{// Cobinacio es igual a
+       cromosomes del primer individu}
+13   ++it;
+14   \textcolor{keywordflow}{while} (it != \hyperlink{class_tret_a918c15168c43121f4d2c1737165b607c}{ids}.end()) \{
+15     \hyperlink{class_cromosomes}{Cromosomes} crom;
+16     crom = x.\hyperlink{class_cjt__individus_a5c98261f78513b1b008cead471d8afa5}{consultar\_crom\_individu}(*it);
+17     \hyperlink{class_tret_aa3cd7d694d507642466ccba3fe92a077}{combinacio}.\hyperlink{class_cromosomes_a3453b58fad109a8317018f8349852d55}{combinacio\_crom}(crom);
+18     ++it;
+19   \}
+20 \}
+\end{DoxyCode}
+
+
+\subsection{Documentació de les Dades Membre}
+\index{Tret@{Tret}!ids@{ids}}
+\index{ids@{ids}!Tret@{Tret}}
+\subsubsection[{\texorpdfstring{ids}{ids}}]{\setlength{\rightskip}{0pt plus 5cm}set$<$int$>$ Tret\+::ids\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_tret_a918c15168c43121f4d2c1737165b607c}{}\label{class_tret_a918c15168c43121f4d2c1737165b607c}
+
+
+Conjunt dels identificadores dels individus que presenten el tret. 
+
+
+
+Definició a la línia 30 del fitxer Tret.\+hh.
+
+\index{Tret@{Tret}!combinacio@{combinacio}}
+\index{combinacio@{combinacio}!Tret@{Tret}}
+\subsubsection[{\texorpdfstring{combinacio}{combinacio}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cromosomes} Tret\+::combinacio\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_tret_aa3cd7d694d507642466ccba3fe92a077}{}\label{class_tret_aa3cd7d694d507642466ccba3fe92a077}
+
+
+Combinacio dels cromosomes dels individus que manifestin el tret. 
+
+
+
+Definició a la línia 33 del fitxer Tret.\+hh.
+
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir dels següents fitxers\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_tret_8hh}{Tret.\+hh}\item 
+\hyperlink{_tret_8cc}{Tret.\+cc}\end{DoxyCompactItemize}
